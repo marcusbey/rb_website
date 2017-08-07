@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-place1= Visit.create(city: 'Montreal', start: "22/05/2017", state: 'Quebec')
+place1= Visit.create(city: 'Montreal', startdate: "22/05/2017", state: 'Quebec', country: 'Canada')

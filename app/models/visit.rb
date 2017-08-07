@@ -7,4 +7,11 @@ class Visit < ApplicationRecord
     [city, state].compact.join(', ')
   end
 
+  def address_changed?
+    city_changed? || state_changed?
+  end
+
+
+
+
 end

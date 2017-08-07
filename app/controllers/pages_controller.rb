@@ -11,16 +11,15 @@ class PagesController < ApplicationController
        autor: "Jim Ronh"
       }
   ]
-  @city = Visit.last.city
-  @city_coordinates = { lat: @city.latitude, lng: @wcity.longitude }
-    @hash = Gmaps4rails.build_markers(@city) do |city, marker|
-      marker.lat city.latitude
-      marker.lng city.longitude
+  @place = Visit.last
+  @place_coordinates = { lat: @place.latitude, lng: @place.longitude }
+    @hash = Gmaps4rails.build_markers(@city) do |place, marker|
+      marker.lat place.latitude
+      marker.lng place.longitude
     end
 
-
-
   end
+
 
   def now
   end

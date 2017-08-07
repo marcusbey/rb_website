@@ -10,18 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170807184119) do
+ActiveRecord::Schema.define(version: 20170807194004) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "visits", force: :cascade do |t|
     t.string   "city"
-    t.datetime "start"
-    t.datetime "end"
+    t.string   "state"
+    t.string   "country"
+    t.datetime "startdate"
+    t.datetime "enddate"
+    t.float    "longitude"
+    t.float    "latitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "state"
   end
 
 end
