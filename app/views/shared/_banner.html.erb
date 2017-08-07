@@ -1,0 +1,15 @@
+<div class="banner" style="background-image: url('<%= image_path "background/home-background#{[1, 2].sample}.jpg" %>');">
+    <div class="banner-content">
+        <div class="home-quote">
+            <% inspiration = @motivation_quotes.sample  %>
+            <h4><%= inspiration[:quote] %> </h4>
+            <p><%= inspiration[:autor] %> </p>
+        </div>
+        <div>
+            <p> What i'm doing
+            <%= link_to "now", pages_now_path, { :class=>"btn btn-home" } %>
+            </p>
+        </div>
+    </div>
+    <%= image_tag('logo.svg', class: 'logo') %>
+</div>

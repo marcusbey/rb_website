@@ -1,1 +1,37 @@
 // Specific CSS for your home-page
+h1, h2, h3, h4, h5, h6, {
+margin: 0px;
+}
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-content {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  h4 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: lighter;
+  }
+}
+
+
+.logo{
+  height: 60px;
+  position: fixed;
+  top: 60px;
+  right: 120px;
+}
