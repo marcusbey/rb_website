@@ -11,6 +11,12 @@ class PagesController < ApplicationController
        autor: "Jim Ronh"
       }
   ]
+  @city = 'Montreal'
+  @city_coordinates = { lat: @city.latitude, lng: @wcity.longitude }
+    @hash = Gmaps4rails.build_markers(@city) do |city, marker|
+      marker.lat city.latitude
+      marker.lng city.longitude
+    end
 
   end
 

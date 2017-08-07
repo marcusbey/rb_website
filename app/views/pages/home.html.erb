@@ -1,4 +1,5 @@
 <section id="home">
+   <div id="map" style="width: 20%; height: 100%></div>
   <%= render 'shared/banner' %>
 </section>
 
@@ -28,3 +29,25 @@
  -->
 
 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTiqJOTZ0WFaiV-EP7hsFFi2cBhYnfP8A"></script>
+
+
+ <% content_for(:after_js) do %>
+ <%= javascript_tag do %>
+ $(document).ready(function() {
+ var handler = Gmaps.build('Google');
+ handler.buildMap({ provider: { draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true }, internal: { id: 'map' } }, function() {
+ markers = handler.addMarkers(<%= raw @hash.to_json %>);
+ handler.bounds.extendWith(markers);
+ handler.fitMapToBounds();
+ if (markers.length == 0) {
+ handler.getMap().setZoom(2);
+ } else if (markers.length == 1) {
+ handler.getMap().setZoom(16);
+ }
+ });
+
+ });
+
+ <% end %>
+ <% end %>
