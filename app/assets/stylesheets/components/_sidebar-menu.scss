@@ -3,9 +3,9 @@
 /* Push Sidebar Menu Css ---*/
 /*----------------------------------*/
 .pushmenu { /*this is the nav*/
-    background: #323232;
+    background: white;
     font-family: Arial, Helvetics, sans-serif;
-    width: 270px;
+    width: 300px;
     height: 100%;
     top: 0;
     z-index: 1000;
@@ -23,7 +23,7 @@
 /*==================================*/
 
 .pushmenu-right {
-    right: -270px;
+    right: -300px;
 }
 
     .pushmenu-right.pushmenu-open {
@@ -34,16 +34,16 @@
     }
 
 .pushmenu-push-toleft {
-    left: -270px;
+    left: -300px;
 }
 
-/*Transition*/
-.pushmenu, .pushmenu-push {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
+// /*Transition*/
+// .pushmenu, .pushmenu-push {
+//     -webkit-transition: all 0.3s ease;
+//     -moz-transition: all 0.3s ease;
+//     transition: all 0.3s ease;
+//     -o-transition: all 0.3s ease;
+// }
 
 
 /*==================================*/

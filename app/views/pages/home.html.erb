@@ -4,7 +4,7 @@
 </section>
 
 <section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
-    <a id="menu-sidebar-close-icon" class="menu-close"><%= image_tag('logo.svg', class: 'logo') %></a>
+    <a id="menu-sidebar-close-icon" class="menu-close"></a>
 
     <hr class="dark" />
     <div class="clearfix"></div>
@@ -24,6 +24,12 @@
         <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
     </ul>
 </section>
+
+<div class="side-menu-btn-fix ">
+    <a id="menu-sidebar-list-icon">
+        <%= image_tag('logo.svg', class: 'logo') %>
+    </a>
+</div>
 
  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
  <% content_for(:after_js) do %>
