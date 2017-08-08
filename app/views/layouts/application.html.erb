@@ -2,18 +2,24 @@
 <html>
   <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title><%= '2omain 3030Ξ' %></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Romain BOBOE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0" />
+  <title><%= @title || '2omain 3030Ξ' %></title>
 
   <%= favicon_link_tag %>
   <%= stylesheet_link_tag 'application', media: 'all' %>
 
+
   </head>
   <body>
     <%= yield %>
+
     <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
     <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
     <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'plugin/sidebar-menu' %>
     <%= yield(:after_js) %>
   </body>
 </html>
