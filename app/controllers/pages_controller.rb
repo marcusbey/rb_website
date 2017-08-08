@@ -10,9 +10,9 @@ class PagesController < ApplicationController
        quote: "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much.",
        autor: "Jim Ronh"
       }
-  ]
-  @place = Visit.last
-  @place_coordinates = { lat: @place.latitude, lng: @place.longitude }
+    ]
+    @place = Visit.last
+    @place_coordinates = { lat: @place.latitude, lng: @place.longitude }
     @hash = Gmaps4rails.build_markers(@place) do |place, marker|
       marker.lat place.latitude
       marker.lng place.longitude
@@ -30,10 +30,10 @@ class PagesController < ApplicationController
   def mywritings
   end
 
-  def myworld
+  def myworlds
   end
 
-  def contact
+  def mybox
   end
 
 end
