@@ -19,7 +19,7 @@
 
 
 /*==================================*/
-/* Left Sidebar Menu Css --------*/
+/* Right Sidebar Menu Css --------*/
 /*==================================*/
 
 .pushmenu-right {
@@ -37,20 +37,20 @@
     left: -300px;
 }
 
-// /*Transition*/
-// .pushmenu, .pushmenu-push {
-//     -webkit-transition: all 0.3s ease;
-//     -moz-transition: all 0.3s ease;
-//     transition: all 0.3s ease;
-//     -o-transition: all 0.3s ease;
-// }
+/*Transition*/
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
 
 
 /*==================================*/
 /* Left Sidebar Menu Css --------*/
 /*==================================*/
 .pushmenu-left {
-    left: -270px;
+    left: -300px;
 }
 
     .pushmenu-left.pushmenu-open {
@@ -62,6 +62,6 @@
     }
 
 .pushmenu-push-toright {
-    right: -270px;
+    right: -300px;
 }
 
