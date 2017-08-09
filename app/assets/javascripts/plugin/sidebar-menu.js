@@ -1,32 +1,3 @@
-// var main = function() {
-//   /* Push the body and the nav over by 285px over */
-//   $('#menu-sidebar-list-icon').click(function() {
-//     $('.pushmenu-right').animate({
-//       right: "0px"
-//     }, 200);
-
-//     $('.banner').animate({
-//       left: "0px"
-//     }, 200);
-//   });
-
-//   /* Then push them back */
-//   $('#menu-sidebar-close-icon').click(function() {
-//     $('.pushmenu-right').animate({
-//       right: "0px"
-//     }, 200);
-
-//     $('.banner').animate({
-//       left: "0px"
-//     }, 200);
-//   });
-// };
-
-
-// $(document).ready(main);
-
-
-
 
 // ==============================================
 // Right Sidemenu Bar
