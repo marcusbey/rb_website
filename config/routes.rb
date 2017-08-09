@@ -3,11 +3,13 @@ Rails.application.routes.draw do
 
   get 'pages/now'
 
-  get 'pages/myworks'
+  get 'pages/works'
 
-  get 'pages/mywritings'
+  get 'pages/writings'
 
-  get 'pages/myworld'
+  get 'pages/worlds'
+
+  get 'pages/contact'
 
   root to: 'pages#home'
 

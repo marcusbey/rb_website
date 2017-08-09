@@ -24,16 +24,16 @@ class PagesController < ApplicationController
   def now
   end
 
-  def myworks
+  def works
   end
 
-  def mywritings
+  def writings
   end
 
-  def myworlds
+  def worlds
   end
 
-  def mybox
+  def contact
   end
 
 end

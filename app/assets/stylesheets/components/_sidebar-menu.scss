@@ -3,12 +3,12 @@
 /* Push Sidebar Menu Css ---*/
 /*----------------------------------*/
 .pushmenu { /*this is the nav*/
-    background: #323232;
+    background: white;
     font-family: Arial, Helvetics, sans-serif;
-    width: 270px;
+    width: 300px;
     height: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
 }
 
@@ -19,11 +19,11 @@
 
 
 /*==================================*/
-/* Left Sidebar Menu Css --------*/
+/* Right Sidebar Menu Css --------*/
 /*==================================*/
 
 .pushmenu-right {
-    right: -270px;
+    right: -300px;
 }
 
     .pushmenu-right.pushmenu-open {
@@ -34,7 +34,7 @@
     }
 
 .pushmenu-push-toleft {
-    left: -270px;
+    left: -300px;
 }
 
 /*Transition*/
@@ -50,7 +50,7 @@
 /* Left Sidebar Menu Css --------*/
 /*==================================*/
 .pushmenu-left {
-    left: -270px;
+    left: -300px;
 }
 
     .pushmenu-left.pushmenu-open {
@@ -62,6 +62,6 @@
     }
 
 .pushmenu-push-toright {
-    right: -270px;
+    right: -300px;
 }
 

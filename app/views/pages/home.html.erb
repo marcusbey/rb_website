@@ -1,51 +1,66 @@
+<section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
+  <a id="menu-sidebar-close-icon" class="menu-close"></a>
+  <ul class="navmenu">
+    <li><%= link_to 'home', pages_home_path %></li>
+    <li><%= link_to 'now', pages_now_path %></li>
+    <li><%= link_to 'My Works', pages_works_path %></li>
+    <li><%= link_to 'My Writings', pages_writings_path %></li>
+    <li><%= link_to 'My Worlds', pages_worlds_path %></li>
+    <li><%= link_to 'My Box', pages_contact_path %></li>
+  </ul>
+  <hr class="dark" />
+  <div>
+
+    <ul class="social">
+
+      <li><a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+    </ul>
+
+    <ul class="social">
+
+      <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+    </ul>
+  </div>
+
+</section>
+
 <section id="home">
   <div id="map" style="width: 18%; height: 100%"> </div>
   <%= render 'shared/banner' %>
 </section>
 
-<section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
-    <a id="menu-sidebar-close-icon" class="menu-close"><%= image_tag('logo.svg', class: 'logo') %></a>
+<div class="side-menu-btn-fix ">
+  <a id="menu-sidebar-list-icon">
+    <%= image_tag('logo.svg', class: 'logo') %>
+  </a>
+</div>
 
-    <hr class="dark" />
-    <div class="clearfix"></div>
-    <ul class="mtb-30">
-        <li><a class="all-link" target="_blank" href="http://www.romainboboe.com">Home</a></li>
-        <li><a href="mywork.html">My Works</a></li>
-        <li><a href="mywritings.html">My Writings</a></li>
-        <li><a href="myworld.html">My World</a></li>
-        <li><a href="mybox.html">My Box</a></li>
-    </ul>
-    <hr class="dark" />
-    <ul class="social mt-30">
-        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://vimeo.com/" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
-        <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
-    </ul>
-</section>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
+<% content_for(:after_js) do %>
+<%= javascript_tag do %>
+$(document).ready(function() {
+var handler = Gmaps.build('Google');
+mapStyle = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#eaf6d7"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}];
 
- <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
- <% content_for(:after_js) do %>
- <%= javascript_tag do %>
- $(document).ready(function() {
- var handler = Gmaps.build('Google');
- mapStyle = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#eaf6d7"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}];
+handler.buildMap({ provider: { styles: mapStyle, draggable: true, zoomControl: true, scrollwheel: true, disableDoubleClickZoom: true }, internal: { id: 'map' } }, function() {
+markers = handler.addMarkers(<%= raw @hash.to_json %>);
+handler.bounds.extendWith(markers);
+handler.fitMapToBounds();
+if (markers.length == 0) {
+handler.getMap().setZoom(2);
+} else if (markers.length == 1) {
+handler.getMap().setZoom(13);
+}
+});
 
- handler.buildMap({ provider: { styles: mapStyle, draggable: true, zoomControl: true, scrollwheel: true, disableDoubleClickZoom: true }, internal: { id: 'map' } }, function() {
- markers = handler.addMarkers(<%= raw @hash.to_json %>);
- handler.bounds.extendWith(markers);
- handler.fitMapToBounds();
- if (markers.length == 0) {
- handler.getMap().setZoom(2);
- } else if (markers.length == 1) {
- handler.getMap().setZoom(13);
- }
- });
+});
 
- });
-
- <% end %>
- <% end %>
+<% end %>
+<% end %>
 
 
