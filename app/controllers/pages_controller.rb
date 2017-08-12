@@ -30,7 +30,7 @@ class PagesController < ApplicationController
   def writings
   end
 
-  def worlds
+  def world
   end
 
   def contact
