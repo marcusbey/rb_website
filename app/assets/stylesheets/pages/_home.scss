@@ -29,12 +29,6 @@ margin: 0px;
   display: flex;
   justify-content: center;
 }
-.ban-content {
-  height: 100%;
-  width: 100%;
-  transform: scale(1) !important;
-  background-image: url("background/home-background1.jpg");
-}
 
 .glitch {
    background-image: url("background/home-background1.svg");
@@ -46,15 +40,19 @@ margin: 0px;
    opacity : 1;
 }
 
-
-.banner-content {
+.ban-content {
   height: 100%;
-  width: 60%;
-  padding-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
+  width: 100%;
+  transform: scale(1) !important;
+  background-image: url("background/home-background1.jpg");
+}
+
+.home-quote {
+    width: 60%;
+    height: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
 
   h4 {
     font-weight: 300;
@@ -66,20 +64,22 @@ margin: 0px;
     font-weight: lighter;
     font-size: 1.1em;
   }
-  .btn {
-  cursor: pointer;
-  position: fixed;
-  z-index: 999;
-  }
 }
 
+
+.box-transition {
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  z-index:100;
+}
 
 .hidden {
   visibility: hidden;
 }
 
 
-.logo{
+#logo{
   height: 60px;
   position: fixed;
   top: 60px;

@@ -17,7 +17,6 @@ class PagesController < ApplicationController
       marker.lat place.latitude
       marker.lng place.longitude
     end
-
   end
 
 
