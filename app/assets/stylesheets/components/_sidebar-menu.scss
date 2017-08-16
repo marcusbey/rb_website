@@ -65,3 +65,30 @@
     right: -300px;
 }
 
+
+@media screen and (max-width: 700px) {
+
+.pushmenu { /*this is the nav*/
+    width: 180px;
+}
+
+.pushmenu-right {
+    right: -180px;
+}
+
+.pushmenu-push-toleft {
+    left: -180px;
+}
+
+
+.pushmenu-left {
+    left: -180px;
+}
+
+.pushmenu-push-toright {
+    right: -180px;
+}
+
+
+}
+

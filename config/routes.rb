@@ -3,11 +3,13 @@ Rails.application.routes.draw do
 
   get 'pages/now'
 
+   get 'pages/about'
+
   get 'pages/works'
 
   get 'pages/writings'
 
-  get 'pages/worlds'
+  get 'pages/world'
 
   get 'pages/contact'
 

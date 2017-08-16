@@ -17,11 +17,12 @@ class PagesController < ApplicationController
       marker.lat place.latitude
       marker.lng place.longitude
     end
-
   end
 
-
   def now
+  end
+
+  def about
   end
 
   def works
