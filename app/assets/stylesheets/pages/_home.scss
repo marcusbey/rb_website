@@ -66,6 +66,10 @@ margin: 0px;
   }
 }
 
+.home-btn {
+  margin: 10px;
+  width: 80px;
+}
 
 .box-transition {
   position: absolute;
@@ -95,4 +99,24 @@ margin: 0px;
   width: 18vw;
   overflow: hidden;
   z-index: 0;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+#logo{
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 120px;
+  z-index: 100;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#map {
+  display: hidden;
+}
+
 }

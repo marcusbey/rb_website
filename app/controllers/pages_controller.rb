@@ -19,8 +19,10 @@ class PagesController < ApplicationController
     end
   end
 
-
   def now
+  end
+
+  def about
   end
 
   def works

@@ -1,10 +1,12 @@
+ <!--  section menu -->
   <section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
     <a id="menu-sidebar-close-icon" class="menu-close"></a>
     <ul class="navmenu">
       <li><%= link_to 'now', pages_now_path %></li>
+      <li><%= link_to 'about', pages_about_path %></li>
       <li><%= link_to 'Recents Works', pages_works_path %></li>
       <li><%= link_to 'Writings', pages_writings_path %></li>
-      <li><%= link_to 'World', pages_worlds_path %></li>
+      <li><%= link_to 'Travel', pages_world_path %></li>
       <li><%= link_to 'Contact', pages_contact_path %></li>
     </ul>
     <hr class="dark" />
@@ -21,25 +23,41 @@
 
       </ul>
     </div>
-
   </section>
+<!--   End of section menu -->
 
+
+<!--   section home -->
   <section id="home">
     <div id="map" style="width: 18%; height: 100%"> </div>
     <%= render 'shared/banner' %>
+    <div class="box-transition">
+      <p> what i'm doing
+        <%= link_to "now", pages_now_path, { :class=>"btn btn-warning home-btn" } %>
+      </p>
+    </div>
   </section>
+<!--   End of section home -->
 
-  <div class="box-transition">
-    <p> what i'm doing
-      <%= link_to "now", pages_now_path, { :class=>"btn btn-warning" } %>
-    </p>
-  </div>
+
+<!--   section now  -->
+
+<!-- End of section now -->
+
+
+
+
+
+
+
 
   <div class="side-menu-btn-fix ">
     <a id="menu-sidebar-list-icon">
       <%= image_tag('logo1.svg', id: 'logo') %>
     </a>
   </div>
+
+
   <%= javascript_include_tag 'plugin/glitch' %>
   <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
   <% content_for(:after_js) do %>
