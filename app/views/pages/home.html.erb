@@ -11,14 +11,10 @@
   <div>
 
     <ul class="social">
-
       <li><a href="https://github.com/marcusbey" target="_blank"><i class="fa fa-github"></i></a></li>
       <li><a href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-
     </ul>
-
     <ul class="social">
-
       <li><a href="https://www.twitter.com/romainbey" target="_blank"><i class="fa fa-twitter"></i></a></li>
       <li><a href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
       <li><a href="https://www.facebook.com/mbey3" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -38,7 +34,7 @@
     <%= image_tag('logo1.svg', class: 'logo') %>
   </a>
 </div>
-
+<%= javascript_include_tag 'plugin/glitch' %>
 <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
 <% content_for(:after_js) do %>
 <%= javascript_tag do %>
