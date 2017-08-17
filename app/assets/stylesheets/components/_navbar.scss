@@ -1,4 +1,4 @@
-.navmenu {
+a.navmenu {
   li{
     padding: 10px 0px;
   }
@@ -48,6 +48,8 @@
 
 .dark {
   padding:0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .social {
@@ -64,13 +66,14 @@
 #pushmenu-right {
   ul {
     padding: 2px 20px 2px 20px;
-  }
-  a {
+      a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
     font-size: 12px;
+    }
   }
+
 }
 
 
