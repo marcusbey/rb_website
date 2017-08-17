@@ -1,48 +1,61 @@
  <!--  section menu -->
-  <section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
-    <a id="menu-sidebar-close-icon" class="menu-close"></a>
-    <ul class="navmenu">
-      <li><%= link_to 'now', pages_now_path %></li>
-      <li><%= link_to 'about', pages_about_path %></li>
-      <li><%= link_to 'Recents Works', pages_works_path %></li>
-      <li><%= link_to 'Writings', pages_writings_path %></li>
-      <li><%= link_to 'Travel', pages_world_path %></li>
-      <li><%= link_to 'Contact', pages_contact_path %></li>
+<div id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
+  <a id="menu-sidebar-close-icon" class="menu-close"></a>
+  <ul class="navmenu">
+    <li><%= link_to 'home', :anchor => "home" %></li>
+    <li><%= link_to 'now', :anchor => "now" %></li>
+    <li><%= link_to 'about', pages_about_path %></li>
+    <li><%= link_to 'Recents Works', pages_works_path %></li>
+    <li><%= link_to 'Writings', pages_writings_path %></li>
+    <li><%= link_to 'Travel', pages_world_path %></li>
+    <li><%= link_to 'Contact', pages_contact_path %></li>
+  </ul>
+  <hr class="dark" />
+  <div>
+    <ul class="social">
+      <li><a href="https://github.com/marcusbey" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
     </ul>
-    <hr class="dark" />
-    <div>
+    <ul class="social">
+      <li><a href="https://www.twitter.com/romainbey" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/mbey3" target="_blank"><i class="fa fa-facebook"></i></a></li>
 
-      <ul class="social">
-        <li><a href="https://github.com/marcusbey" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-      <ul class="social">
-        <li><a href="https://www.twitter.com/romainbey" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/mbey3" target="_blank"><i class="fa fa-facebook"></i></a></li>
-
-      </ul>
-    </div>
-  </section>
+    </ul>
+  </div>
+</div>
 <!--   End of section menu -->
 
+ <div id="map"></div>
+<div >
 
-<!--   section home -->
-  <section id="home">
-    <div id="map" style="width: 18%; height: 100%"> </div>
+
+  <!--   section home -->
+  <div id="home">
     <%= render 'shared/banner' %>
     <div class="box-transition">
-      <p> what i'm doing
-        <%= link_to "now", pages_now_path, { :class=>"btn btn-warning home-btn" } %>
+      <p> what i'm doing</p>
+      <%= link_to "now", pages_now_path, { :class=>"btn btn-warning home-btn" } %>
+
+    </div>
+  </div>
+  <!--   End of section home -->
+
+  <!--   section now  -->
+  <div id="now" class="banner-container">
+    <%= render 'shared/now' %>
+    <div class="box-transition">
+      <p> To know more
+        <%= link_to "about me", pages_about_path, { :class=>"btn btn-warning home-btn" } %>
       </p>
     </div>
-  </section>
-<!--   End of section home -->
+  </div>
 
+  <div id="about">
+  <%= render 'shared/about' %>
+  </div>
 
-<!--   section now  -->
-
-<!-- End of section now -->
+</div>
 
 
 
