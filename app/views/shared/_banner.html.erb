@@ -1,10 +1,12 @@
 <div class="banner-container">
   <div class="banner ban-content">
-    <div class="home-quote">
+    <div id="quote" class="home-quote">
         <% inspiration = @motivation_quotes.sample  %>
         <h4><%= inspiration[:quote] %> </h4>
         <p><%= inspiration[:autor] %> </p>
     </div>
   </div>
-  <div id="glitch" class="banner glitch "></div>
+  <div id="glitch" class="banner glitch"></div>
 </div>
+
+
