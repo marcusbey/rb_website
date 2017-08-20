@@ -1,20 +1,28 @@
 <div id="map"></div>
 
-<!--   section home -->
-<div id="home" class="section">
-  <%= render 'shared/banner' %>
-  <div class="box-transition">
-    <p> what i'm doing</p>
-    <%= link_to "now", pages_home_path(@pages_home, anchor: "now"), class: "btn btn-warning home-btn" %>
-  </div>
-</div>
-<!--   End of section home -->
+<div class="page-container">
+    <!--   section home -->
+    <div id="home" class="section">
+      <%= render 'shared/banner' %>
+      <div class="box-transition">
+        <p> what i'm doing</p>
+        <%= link_to "now", pages_home_path(@pages_home, anchor: "now"), class: "btn btn-warning home-btn" %>
+      </div>
+    </div>
+    <!--   End of section home -->
 
-<!-- section now -->
-<div id="now" class="section">
-  <%= render 'shared/now' %>
+    <!-- section now -->
+    <div id="now" class="section">
+      <%= render 'shared/now' %>
+    </div>
+    <!-- end of section now -->
+
+    <!-- section about -->
+    <div id="now" class="section">
+      <%= render 'shared/about' %>
+    </div>
+    <!-- end section about  -->
 </div>
-<!-- end of section now -->
 
 <%= javascript_include_tag 'plugin/glitch' %>
 

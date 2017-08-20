@@ -12,14 +12,20 @@ margin: 0px;
   height: 100vh;
 }
 
+.page-container {
+  overflow: auto;
+  position: relative;
+  height: 100vh;
+}
+
 .banner-container {
   width: 82vw;
   height: 100vh;
   position: absolute;
   right: 0;
-  -webkit-box-shadow: -1px 0px 3px 0px rgba(0,0,0,0.15);
-     -moz-box-shadow: -1px 0px 3px 0px rgba(0,0,0,0.15);
-          box-shadow: -1px 0px 3px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -2px 0px 4px -3px rgba(0,0,0,0.15);
+     -moz-box-shadow: -2px 0px 4px -3px rgba(0,0,0,0.15);
+          box-shadow: -2px 0px 4px -3px rgba(0,0,0,0.15);
 }
 
 .banner {
@@ -33,7 +39,7 @@ margin: 0px;
 }
 
 .glitch {
-   background-image: url("background/home-background.svg");
+   background-image: url('home-background.svg');
    position: absolute;
    width : 100%;
    height : 100%;
@@ -46,7 +52,7 @@ margin: 0px;
   height: 100%;
   width: 100%;
   transform: scale(1) !important;
-  background-image: url("background/home-background.jpg");
+  background-image: url('home-background.jpg');
 }
 
 .home-quote {
