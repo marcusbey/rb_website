@@ -1,5 +1,8 @@
-.navmenu li {
+.navmenu {
+margin-top: 200px;
+li {
   padding: 5px 0px;
+}
 }
 
 .social {
@@ -36,11 +39,11 @@
 
 @media screen and (max-width: 700px) {
 .navmenu {
-  margin-top: 100px;
+  margin-top: 70px;
   li{
     padding: 0px 0px;
+    line-height: 12px;
   }
-
 }
 
 .dark {
@@ -52,26 +55,65 @@
 .social {
   display: inline-flex;
   justify-content: flex-start;
+  margin-bottom: 0px;
+  line-height: 0;
   li {
     padding-right: 10px;
+    line-height: 10px;
   }
   .fa {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 #pushmenu-right {
   ul {
-    padding: 1px 20px 1px 20px;
+    padding: 0px 20px 0px 20px;
       a {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
-    font-size: 12px;
+    font-size: 11px;
     }
   }
 
 }
 
+
+}
+
+
+
+@media screen and (max-height: 700px) {
+.navmenu {
+  margin-top: 70px;
+  margin-left: 50px;
+  li {
+    padding: 5px 0px;
+    line-height: 12px;
+  }
+}
+
+.dark {
+  padding:0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.social {
+  margin-bottom: 0px;
+  line-height: 0px;
+  li {
+    padding-right: 10px;
+    line-height: 10px;
+  }
+}
+
+#pushmenu-right {
+  ul {
+    padding: 10px 20px 10px 20px;
+  }
+
+}
 
 }
