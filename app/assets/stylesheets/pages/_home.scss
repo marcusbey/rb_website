@@ -39,7 +39,7 @@ margin: 0px;
 }
 
 .glitch {
-   background-image: url('home-background.svg');
+   background-image: url(asset-path('home-background.svg'));
    position: absolute;
    width : 100%;
    height : 100%;
@@ -52,7 +52,7 @@ margin: 0px;
   height: 100%;
   width: 100%;
   transform: scale(1) !important;
-  background-image: url('home-background.jpg');
+  background-image: url(asset-path('home-background.jpg'));
 }
 
 .home-quote {
