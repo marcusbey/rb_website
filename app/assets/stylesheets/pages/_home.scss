@@ -1,6 +1,9 @@
 // Specific CSS for your home-page
 body {
-
+  overflow: hidden;
+  ::-webkit-scrollbar {
+      display: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, {
@@ -98,7 +101,7 @@ margin: 0px;
   position: fixed;
   top: 60px;
   right: 120px;
-  z-index: 100;
+  z-index: 900;
   cursor: pointer;
   opacity: 0.7;
 }
@@ -121,7 +124,7 @@ margin: 0px;
   position: fixed;
   top: 30px;
   right: 90px;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
   opacity: 0.7;
 }

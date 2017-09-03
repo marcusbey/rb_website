@@ -5,7 +5,7 @@
 .pushmenu { /*this is the nav*/
     background: white;
     font-family: Arial, Helvetics, sans-serif;
-    width: 300px;
+    width: 18vw;
     height: 100%;
     top: 0;
     z-index: 100;
@@ -23,7 +23,7 @@
 /*==================================*/
 
 .pushmenu-right {
-    right: -300px;
+    right: -18vw;
 }
 
     .pushmenu-right.pushmenu-open {
@@ -34,7 +34,7 @@
     }
 
 .pushmenu-push-toleft {
-    left: -300px;
+    left: -18vw;
 }
 
 /*Transition*/
@@ -50,7 +50,7 @@
 /* Left Sidebar Menu Css --------*/
 /*==================================*/
 .pushmenu-left {
-    left: -300px;
+    left: -18vw;
 }
 
     .pushmenu-left.pushmenu-open {
@@ -62,7 +62,7 @@
     }
 
 .pushmenu-push-toright {
-    right: -300px;
+    right: -18vw;
 }
 
 

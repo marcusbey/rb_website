@@ -13,41 +13,7 @@
   <%= javascript_include_tag 'application' %>
   </head>
   <body>
-  	 <!--  section menu -->
-  	<div id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
-  	  <a id="menu-sidebar-close-icon" class="menu-close"></a>
-  	  <ul class="navmenu">
-  	    <li><%= link_to 'Home', pages_home_path(@pages_home, anchor: "home") %></li>
-  	    <li><%= link_to 'Now',  pages_home_path(@pages_home, anchor: "now") %></li>
-  	    <li><%= link_to 'About', pages_home_path(@pages_home, anchor: "about") %></li>
-  	    <li><%= link_to 'Recents Works', pages_works_path %></li>
-  	    <li><%= link_to 'Writings', pages_writings_path %></li>
-  	    <li><%= link_to 'Travel', pages_world_path %></li>
-  	    <li><%= link_to 'Contact', pages_contact_path %></li>
-  	  </ul>
-  	  <hr class="dark" />
-  	  <div>
-  	    <ul class="social">
-  	      <li><a href="https://github.com/marcusbey" target="_blank"><i class="fa fa-github"></i></a></li>
-  	      <li><a href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-  	    </ul>
-  	    <ul class="social">
-  	      <li><a href="https://www.twitter.com/romainbey" target="_blank"><i class="fa fa-twitter"></i></a></li>
-  	      <li><a href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-  	      <li><a href="https://www.facebook.com/mbey3" target="_blank"><i class="fa fa-facebook"></i></a></li>
-
-  	    </ul>
-  	  </div>
-  	</div>
-
-  	<div class="side-menu-btn-fix ">
-  	  <a id="menu-sidebar-list-icon">
-  	    <%= image_tag('logo1.svg', id: 'logo') %>
-  	  </a>
-  	</div>
-
-  	<!--   End of section menu -->
-
+    <%= render 'shared/menu' %>
     <%= yield %>
 
 		<script type="text/javascript">
