@@ -1,6 +1,6 @@
 <div id="map"></div>
 
-<div class="page-container">
+<div id="fullpage" class="page-container">
     <!--   section home -->
     <div id="home" class="section">
       <%= render 'shared/banner' %>
@@ -14,12 +14,21 @@
     <!-- section now -->
     <div id="now" class="section">
       <%= render 'shared/now' %>
+      <div class="box-transition">
+        <p> find out more </p>
+        <%= link_to "about", pages_home_path(@pages_home, anchor: "about"), class: "btn btn-warning home-btn" %>
+      </div>
     </div>
     <!-- end of section now -->
 
     <!-- section about -->
-    <div id="now" class="section">
+    <div id="about" class="section">
       <%= render 'shared/about' %>
+      <div class="box-transition">
+        <%= mail_to "hello@romainboboe.com" do %>
+        <div class="btn btn-warning home-btn">Contact</div>
+        <% end %>
+      </div>
     </div>
     <!-- end section about  -->
 </div>
