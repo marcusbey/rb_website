@@ -1,6 +1,6 @@
 <div id="map"></div>
 
-<div class="page-container">
+<div id="fullpage" class="page-container">
     <!--   section home -->
     <div id="home" class="section">
       <%= render 'shared/banner' %>
@@ -64,6 +64,9 @@ handler.getMap().setZoom(3);
           function() {
           $('.glitch')._Glitch({destroy:!0,glitch:!0,scale:!0,blend:!0,blendModeType:"hue",glitch1TimeMin:100,glitch1TimeMax:400,glitch2TimeMin:10,glitch2TimeMax:100});
           });
+
+
+
         });
 </script>
 
