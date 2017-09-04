@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'pages/now'
 
-   get 'pages/about'
+  get 'pages/about'
 
   get 'pages/works'
 
@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'pages/world'
 
   get 'pages/contact'
+
+  get '/now', to: redirect('/pages/home#now')
 
   root to: 'pages#home'
 
