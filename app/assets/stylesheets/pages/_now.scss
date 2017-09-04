@@ -1,11 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400|Sue+Ellen+Francisco');
 
 .profile {
   margin-top: 200px;
 
-}
-.presentation {
-  font-size: 23px;
-  font-weight: bold;
 }
 
 .page-container {
@@ -14,12 +11,17 @@
 }
 
 .now-page {
-  font-size: 14px;
+
 }
 
-.page-row {
+.mid-banner {
   margin: 0px;
-  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100vh;
+  padding: 8%;
+  overflow: scroll;
 }
 
 .inactive {
@@ -29,19 +31,60 @@
 
 
 .mid-banner {
-  height: 100vh;
-  padding: 5%;
-  overflow: scroll;
+
 }
 
-.right-now {
-  background-color: #FFBB1B;
+.now-right {
+  position: relative;
+  background-color: #FFD058;
   display: flex;
   flex-direction: column;
   justify-content: center;
+      h1 {
+        width: 100px;
+        position: relative;
+        font-size: 6em;
+        color: white;
+        margin-bottom: 100px;
+        font-family: 'Sue Ellen Francisco', cursive;
+
+      }
+      :nth-child(2) {
+        font-size: 2em;
+      }
+      :nth-child(3) {
+        font-size: 1.4em;
+        padding-bottom: 100px;
+      }
+}
+
+.about-left{
+    background-color: #53F2DC;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+          h1 {
+        width: 100px;
+        position: relative;
+        font-size: 6em;
+        color: white;
+        margin-bottom: 100px;
+        font-family: 'Sue Ellen Francisco', cursive;
+
+      }
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.more-about {
 
 }
 
-.left-about{
-    background-color: lightgrey;
+.decription {
+  font-size: 33px;
 }

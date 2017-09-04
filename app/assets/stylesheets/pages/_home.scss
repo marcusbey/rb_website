@@ -13,6 +13,7 @@ margin: 0px;
 .section
  {
   height: 100vh;
+  position: relative;
 }
 
 .page-container {
@@ -85,7 +86,7 @@ margin: 0px;
 .box-transition {
   display: inline-flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: 15vh;
   right: 350px;
   z-index:100;
