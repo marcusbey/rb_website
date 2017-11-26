@@ -6,17 +6,16 @@
     background: white;
     font-family: Arial, Helvetics, sans-serif;
     width: 18vw;
-    height: 100%;
+    position: fixed;
     top: 0;
     z-index: 100;
-    position: fixed;
+
 }
 
 .pushmenu-push {
     overflow-x: hidden;
     position: relative;
 }
-
 
 /*==================================*/
 /* Right Sidebar Menu Css --------*/
@@ -30,7 +29,7 @@
         right: 0;
     }
     .pushmenu-push-left {
-        left:0;
+        left: 0;
     }
 
 .pushmenu-push-toleft {
@@ -44,51 +43,3 @@
     transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 }
-
-
-/*==================================*/
-/* Left Sidebar Menu Css --------*/
-/*==================================*/
-.pushmenu-left {
-    left: -18vw;
-}
-
-    .pushmenu-left.pushmenu-open {
-        left: 0;
-    }
-
-    .pushmenu-push-right {
-        right:0;
-    }
-
-.pushmenu-push-toright {
-    right: -18vw;
-}
-
-
-@media screen and (max-width: 700px) {
-
-.pushmenu { /*this is the nav*/
-    width: 160px;
-}
-
-.pushmenu-right {
-    right: -160px;
-}
-
-.pushmenu-push-toleft {
-    left: -160px;
-}
-
-
-.pushmenu-left {
-    left: -160px;
-}
-
-.pushmenu-push-toright {
-    right: -160px;
-}
-
-
-}
-

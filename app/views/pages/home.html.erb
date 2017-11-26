@@ -1,6 +1,13 @@
 <div id="map"></div>
 
 <div id="fullpage" class="page-container">
+
+    <div class="side-menu-btn-fix">
+      <a id="menu-sidebar-list-icon" class="menu-open hidden">
+        <%= image_tag('logo1.svg', id: '', class: 'logo') %>
+      </a>
+    </div>
+
     <!--   section home -->
     <div id="home" class="section">
       <%= render 'shared/banner' %>
@@ -33,8 +40,6 @@
     <!-- end section about  -->
 </div>
 
-<%= javascript_include_tag 'plugin/glitch' %>
-
 <script src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyAp1uREu2TPA8X76XFYapEZZ6EwzHeWWSs"></script>
 <% content_for(:after_js) do %>
 <%= javascript_tag do %>
@@ -59,20 +64,5 @@ handler.getMap().setZoom(3);
 <% end %>
 
 
-<script type = "text/javascript" language = "javascript">
-   $(document).ready(function() {
-      $('#glitch').hover(
-          function() {
-            $('.glitch')._Glitch({destroy:!1,glitch:!0,scale:!0,blend:!0,blendModeType:"hue",glitch1TimeMin:100,glitch1TimeMax:400,glitch2TimeMin:10,glitch2TimeMax:100});
-            });
-      $('#logo').hover(
-            function() {
-            $('.glitch')._Glitch({destroy:!0,glitch:!0,scale:!0,blend:!0,blendModeType:"hue",glitch1TimeMin:100,glitch1TimeMax:400,glitch2TimeMin:10,glitch2TimeMax:100});
-            });
-       $('.home-btn').hover(
-          function() {
-          $('.glitch')._Glitch({destroy:!0,glitch:!0,scale:!0,blend:!0,blendModeType:"hue",glitch1TimeMin:100,glitch1TimeMax:400,glitch2TimeMin:10,glitch2TimeMax:100});
-          });
-        });
-</script>
+
 

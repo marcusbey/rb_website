@@ -1,0 +1,45 @@
+
+/*==================================*/
+/* Left Sidebar Menu Css --------*/
+/*==================================*/
+.pushmenu-left {
+    left: -18vw;
+}
+
+    .pushmenu-left.pushmenu-open {
+        left: 0;
+    }
+
+    .pushmenu-push-right {
+        right:0;
+    }
+
+.pushmenu-push-toright {
+    right: -18vw;
+}
+
+
+@media screen and (max-width: 700px) {
+
+.pushmenu { /*this is the nav*/
+    width: 160px;
+}
+
+.pushmenu-right {
+    right: -160px;
+}
+
+.pushmenu-push-toleft {
+    left: -160px;
+}
+
+.pushmenu-left {
+    left: -160px;
+}
+
+.pushmenu-push-toright {
+    right: -160px;
+}
+
+
+}
