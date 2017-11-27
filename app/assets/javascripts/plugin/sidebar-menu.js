@@ -2,7 +2,6 @@
 // ==============================================
 // Right Sidemenu Bar
 // ==============================================
-
     $menuSidebar = $('.pushmenu-right');
     $menusidebarNav = $('#menu-sidebar-list-icon');
     $menuSidebarclose = $('#menu-sidebar-close-icon');
@@ -21,6 +20,7 @@ $(document).ready(function () {
 
     //sidebar menu navigation icon toggle
     $menusidebarNav.click(function () {
+        $(this).toggleClass('hidden');
         $(this).toggleClass('active');
         $('.pushmenu-push').toggleClass('pushmenu-push-toleft pushmenu-active');
         $menuSidebar.toggleClass('pushmenu-open');
