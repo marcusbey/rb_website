@@ -2,7 +2,7 @@
 // ==============================================
 // Right Sidemenu Bar
 // ==============================================
-    $menuSidebar = $('.pushmenu-right');
+    $menuSidebar = $('#pushmenu-right');
     $menusidebarNav = $('#menu-sidebar-list-icon');
     $menuSidebarclose = $('#menu-sidebar-close-icon');
     $pageBanner = $('.banner-container');
@@ -11,21 +11,20 @@ window.onload = function () {
     $menusidebarNav.removeClass('active');
     $('.pushmenu-push').removeClass('pushmenu-push-toleft');
     $menuSidebar.removeClass('pushmenu-open');
-    $menusidebarNav.removeClass('hidden');
     $pageBanner.css({'right': '0px'});
-  }
+    $menusidebarNav.fadeIn('slow').removeClass('hidden');
+  };
 
 
 $(document).ready(function () {
 
     //sidebar menu navigation icon toggle
     $menusidebarNav.click(function () {
-        $(this).toggleClass('hidden');
         $(this).toggleClass('active');
+        $(this).toggleClass('hidden');
         $('.pushmenu-push').toggleClass('pushmenu-push-toleft pushmenu-active');
         $menuSidebar.toggleClass('pushmenu-open');
-        $menuSidebar.toggleClass('pushmenu-open');
-
+        $menuSidebarclose.removeClass('hidden');
 
     });
 
@@ -34,9 +33,10 @@ $(document).ready(function () {
     //sidebar menu close icon
     $menuSidebarclose.click(function () {
         $menusidebarNav.removeClass('active');
+        $menuSidebarclose.toggleClass('hidden');
         $('.pushmenu-push').removeClass('pushmenu-push-toleft');
         $menuSidebar.removeClass('pushmenu-open');
-
+        $menusidebarNav.fadeIn('slow').removeClass('hidden');
     });
 
     //Window Click Sidemenu Hide
