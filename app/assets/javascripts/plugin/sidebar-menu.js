@@ -9,7 +9,7 @@
 
 window.onload = function () {
     $menusidebarNav.removeClass('active');
-    $('.pushmenu-push').removeClass('pushmenu-push-toleft');
+    $('.pushmenu-push').delay(2000).animate({duration: 3000}).removeClass('pushmenu-push-toleft');
     $menuSidebar.removeClass('pushmenu-open');
     $pageBanner.css({'right': '0px'});
     $menusidebarNav.fadeIn('slow').removeClass('hidden');
@@ -49,6 +49,7 @@ $(document).ready(function () {
             $menusidebarNav.removeClass('active');
             $('.pushmenu-push').removeClass('pushmenu-push-toleft');
             $menuSidebar.removeClass('pushmenu-open');
+            $menusidebarNav.fadeIn('slow').removeClass('hidden');
         }
 
 

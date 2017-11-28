@@ -11,10 +11,13 @@
   <%= favicon_link_tag %>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'page' %>
   </head>
   <body>
-    <%= render 'shared/menu' %>
-    <%= yield %>
+      <div id="mainpage">
+        <%= render 'shared/menu' %>
+        <%= yield %>
+      </div>
 
 		<script type="text/javascript">
 		    $(function(){
@@ -39,6 +42,7 @@
     <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'plugin/sidebar-menu' %>
+
     <%= yield(:after_js) %>
   </body>
 </html>
