@@ -9,9 +9,9 @@
 
 window.onload = function () {
     $menusidebarNav.removeClass('active');
-    $('.pushmenu-push').delay(2000).animate({duration: 3000}).removeClass('pushmenu-push-toleft');
+    $('.pushmenu-push').animate({duration: 2000}).removeClass('pushmenu-push-toleft');
     $menuSidebar.removeClass('pushmenu-open');
-    $pageBanner.css({'right': '0px'});
+    $pageBanner.css({'right': '0'});
     $menusidebarNav.fadeIn('slow').removeClass('hidden');
   };
 

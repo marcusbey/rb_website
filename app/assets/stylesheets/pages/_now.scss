@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400|Sue+Ellen+Francisco');
+
+.now-content {
+  height: 100%;
+  width: 100%;
+  transform: scale(1) !important;
+  background-image: url(asset-path('now-background.jpg'));
+}
+
+.profile {
+  margin-top: 200px;
+}
+
+.page-container {
+  width: 100%;
+  padding: 0px;
+}
+
+.second-banner {
+  margin: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100vh;
+  padding: 5%;
+  overflow: scroll;
+  h1 {
+    width: 100px;
+    position: relative;
+    font-size: 4em;
+    color: white;
+    margin-bottom: 100px;
+    font-family: 'Sue Ellen Francisco', cursive;
+  }
+}
+
+.inactive {
+  font-style: italic;
+   color: lightgrey;
+}
+
+.now-right {
+  position: relative;
+  background-color: #FFBB1B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+      :nth-child(2) {
+        font-size: 1.8em;
+      }
+      :nth-child(3) {
+        font-size: 1.2em;
+        padding-bottom: 100px;
+      }
+}
